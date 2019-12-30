@@ -17,24 +17,31 @@
 }
 else
 {
-<table class="table table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Customer</th>
-            <th>Membership Type</th>
-            <th>Birthday</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var customer in Model)
-        {
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Membership Type</th>
+                <th>Birthday</th>
+                <th>Delete Customer</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
             <tr>
                 <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null) </td>
                 <td>@customer.MembershipType.Name</td>
-                <td>@customer.Birthday.ToString("MMMM, dd, yyyy")</td>
+                @if (customer.Birthday.HasValue)
+                {
+                    <td>@customer.Birthday.Value.ToString("MM/dd/yyyy")</td>
+                }
+                <td><button>@Html.ActionLink("Delete", "Delete", "Customers", new { id = customer.Id }, null)</button></td>
             </tr>
-        }
-    </tbody>
-</table>
+            }
+        </tbody>
+    </table>
 }
+
+@Html.ActionLink("New Customer", "New", "Customers", null, new { @class = "btn btn-primary" })
 

@@ -20,6 +20,7 @@ else
                 <th>Release Date</th>
                 <th>Date Added</th>
                 <th>Stock</th>
+                <th>Remove Movie</th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@ else
                     <td>@movie.ReleaseDate.ToString("MMMM dd, yyyy")</td>
                     <td>@movie.DateAdded.ToString("MMMM dd, yyyy")</td>
                     <td>@movie.Stock</td>
+                    <td><button>@Html.ActionLink("Delete", "Delete", "Movies", new { id = movie.Id }, null)</button></td>
                 </tr>
             }
         </tbody>

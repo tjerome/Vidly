@@ -225,3 +225,4 @@ C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.AddGenre.r
 C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.UpdateMovies.resources
 C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.AddGenreIdToMovies.resources
 C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.AddMovieGenre.resources
+C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.ChangeBirthdayToOptional.resources

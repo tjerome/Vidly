@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
-using System.Data.Entity;
 using Vidly.ViewModels;
 
 namespace Vidly.Controllers
@@ -67,6 +66,7 @@ namespace Vidly.Controllers
 
         public ActionResult Edit(int id)
         {
+
             var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
             if (movie == null)
                 return HttpNotFound();
@@ -80,13 +80,13 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult Delete(Movie movie)
         {
             var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
             _context.Movies.Remove(movieInDb);
             _context.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Movies");
         }
     }
 }
