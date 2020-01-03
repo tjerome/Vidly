@@ -34,10 +34,9 @@
         <br />
     </div>
 
-    //if (Model.Customer == null)
-    //{
     @Html.HiddenFor(m => m.Customer.Id);
-    //}
+    @Html.AntiForgeryToken()
+ 
 
     <button type="submit" class="btn btn-primary">Submit</button>
 }

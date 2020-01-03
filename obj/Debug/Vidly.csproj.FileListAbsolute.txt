@@ -226,3 +226,10 @@ C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.UpdateMovi
 C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.AddGenreIdToMovies.resources
 C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.AddMovieGenre.resources
 C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.ChangeBirthdayToOptional.resources
+C:\Users\Tyler\Documents\Projects\C#\Vidly\obj\Debug\Vidly.Migrations.UpdateModels.resources
+C:\Users\Tyler\Documents\Projects\C#\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\Tyler\Documents\Projects\C#\Vidly\bin\System.Web.Http.dll
+C:\Users\Tyler\Documents\Projects\C#\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\Tyler\Documents\Projects\C#\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\Tyler\Documents\Projects\C#\Vidly\bin\System.Web.Http.xml
+C:\Users\Tyler\Documents\Projects\C#\Vidly\bin\System.Web.Http.WebHost.xml

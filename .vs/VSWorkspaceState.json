@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models"
+    "\\App_Data",
+    "\\App_Start",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Movies"
   ],
+  "SelectedNode": "\\Models\\Movie.cs",
   "PreviewInSolutionExplorer": false
 }
