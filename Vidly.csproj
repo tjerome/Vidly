@@ -190,6 +190,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="DTO\CustomerDto.cs" />
+    <Compile Include="DTO\GenreDto.cs" />
+    <Compile Include="DTO\MembershipTypeDto.cs" />
     <Compile Include="DTO\MovieDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -250,6 +252,10 @@
     <Compile Include="Migrations\201912312208599_UpdateModels.designer.cs">
       <DependentUpon>201912312208599_UpdateModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001041903586_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\202001041903586_AddDrivingLicenseToApplicationUser.designer.cs">
+      <DependentUpon>202001041903586_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -259,6 +265,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -501,10 +508,11 @@
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -564,6 +572,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912312208599_UpdateModels.resx">
       <DependentUpon>201912312208599_UpdateModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001041903586_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>202001041903586_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
