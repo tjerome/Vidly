@@ -48,6 +48,7 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPost]
         public ActionResult Save(Movie movie)
         {
@@ -67,6 +68,7 @@ namespace Vidly.Controllers
             return RedirectToAction("Index", "Movies");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
 
@@ -83,6 +85,7 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpGet]
         public ActionResult Delete(Movie movie)
         {

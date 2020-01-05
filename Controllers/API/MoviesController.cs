@@ -18,7 +18,6 @@ namespace Vidly.Controllers.API
         public MoviesController()
         {
             _context = new ApplicationDbContext();
-
         }
 
         // GET /api/movies
@@ -44,6 +43,7 @@ namespace Vidly.Controllers.API
         }
 
         // POST /api/movies/
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPost]
         public IHttpActionResult CreateMovie(MovieDto movieDto)
         {
@@ -60,6 +60,7 @@ namespace Vidly.Controllers.API
         }
 
         // PUT /api/movies/1
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPut]
         public IHttpActionResult UpdateMovie(int id, MovieDto movieDto)
         {
@@ -79,6 +80,7 @@ namespace Vidly.Controllers.API
         }
 
         // DELETE /api/movies/1
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpDelete]
         public IHttpActionResult DeleteMovie(int id)
         {
